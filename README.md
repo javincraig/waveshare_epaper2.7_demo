@@ -9,13 +9,20 @@ https://www.waveshare.com/wiki/2.7inch_e-Paper_HAT
 
 
 The following is how I got it working
+sudo raspi-config
+- Interface Options
+-- SPI
+--- Would you like the interface to be enabled (Select Yes)
+
+sudo apt-get install python3-venv
 python3 -m venv einkdemo
 source einkdemo/bin/activate
 cd einkdemo/
-
 sudo apt-get install python3-rpi.gpio python-pil python-smbus python-dev libopenjp2-7
 
 pip3 install gpiozero netifaces spidev rpi.gpio pillow
+
+Run the test app
 
 python3 2.7test.py
 
