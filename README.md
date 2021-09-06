@@ -18,6 +18,9 @@ sudo apt-get install python3-venv
 python3 -m venv einkdemo
 source einkdemo/bin/activate
 cd einkdemo/
+
+Copy all the files in this git to einkdemo
+
 sudo apt-get install python3-rpi.gpio python-pil python-smbus python-dev libopenjp2-7
 
 pip3 install gpiozero netifaces spidev rpi.gpio pillow
