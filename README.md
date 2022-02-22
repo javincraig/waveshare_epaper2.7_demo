@@ -9,8 +9,10 @@ https://dev.to/ranewallin/getting-started-with-the-waveshare-2-7-epaper-hat-on-r
 * The wiki for the device:
 https://www.waveshare.com/wiki/2.7inch_e-Paper_HAT
 
+*UPDATE 2/21/2022 by Aaron Hickman
+Building upon code
 
-The following is how I got it working on a Raspberry Pi 3b
+The following is how I got it working on a Raspberry Pi 4
 ---
 sudo raspi-config
 
@@ -28,7 +30,9 @@ cd einkdemo/
 
 Copy all the files in this git to einkdemo
 
-sudo apt-get install python3-rpi.gpio python-pil python-smbus python-dev libopenjp2-7
+sudo apt-get install python3-rpi.gpio python3-pil python3-smbus python3-dev libopenjp2-7
+
+pip3 install wheel
 
 pip3 install gpiozero netifaces spidev rpi.gpio pillow
 
